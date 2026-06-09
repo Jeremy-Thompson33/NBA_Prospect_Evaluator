@@ -66,5 +66,19 @@ def save_player_stats(
     return df
 
 
+def get_player_stats_df(api_instance, season):
+    response = api_instance.get_player_season_stats(season)
+
+    return pd.json_normalize(
+        [player.to_dict() for player in response]
+    )
+
+
+
+
+
+
+
+
 if __name__ == "__main__":
     save_player_stats()
