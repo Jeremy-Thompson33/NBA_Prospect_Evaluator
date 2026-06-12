@@ -74,11 +74,5 @@ def get_player_stats_df(api_instance, season):
     )
 
 
-
-
-
-
-
-
 if __name__ == "__main__":
     save_player_stats()
