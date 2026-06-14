@@ -27,7 +27,7 @@ def get_player_stats_df(api_instance, season):
     )
 
 
-def pull_all_seasons(start_year=2010, end_year=2025):
+def pull_all_seasons(start_year=2010, end_year=2026):
 
     api_instance = create_api_instance()
 
@@ -52,7 +52,7 @@ def pull_all_seasons(start_year=2010, end_year=2025):
 
 
 def save_player_stats(
-    filename="college_player_stats_2010_2025.csv"
+    filename="college_player_stats_2010_2026.csv"
 ):
     df = pull_all_seasons()
 
